@@ -1,8 +1,8 @@
-# action-release-debugapk
+# action-release-react-native-apk
 
-![screenshot](screenshot.png)
+<!-- ![screenshot](screenshot.png) -->
 
-🕷 Build and release debug APK from your Android project
+🕷 Build and release APK from your React-Native project
 
 ## Warning ⚠
 Add a target branch (eg. master) to build the APK to prevent infinite loop (releasing the APK on the release tag will trigger a rerun of the action).
@@ -13,7 +13,7 @@ To use the action simply add the following lines to your `.github/workflows/andr
 
 #### YML
 ```
-name: Build & Publish Debug APK
+name: Publish Release APK
 on:
  push:
   branches:
@@ -23,8 +23,8 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - uses: actions/checkout@master
-   - name: Publish Debug APK
-     uses: ShaunLWM/action-release-debugapk@master
+   - name: Publish Release APK
+     uses: siristechnology/action-release-react-native-apk@master
      env:
       GITHUB_TOKEN: ${{ secrets.TOKEN }}
       APP_FOLDER: app
@@ -48,4 +48,4 @@ You'll need to provide these environment variables to specify exactly what infor
 
 ## Credits
 
-Based off [elgohr/Github-Hub-Action](https://github.com/elgohr/Github-Hub-Action)
+Based off [ShaunLWM/action-release-debugapk](https://github.com/ShaunLWM/action-release-debugapk)
