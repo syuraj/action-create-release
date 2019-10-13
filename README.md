@@ -1,4 +1,4 @@
-# action-release-react-native-apk
+# action-release
 
 <!-- ![screenshot](screenshot.png) -->
 
@@ -24,10 +24,10 @@ jobs:
   steps:
    - uses: actions/checkout@master
    - name: Publish Release APK
-     uses: siristechnology/action-release-react-native-apk@master
+     uses: siristechnology/action-release@master
      env:
       GITHUB_TOKEN: ${{ secrets.TOKEN }}
-      APP_FOLDER: app
+      RELEASE_FILE_PATH: android/app/build/outputs/apk/release/app-release.apk
       RELEASE_TITLE: "New Build"
 ```
 
