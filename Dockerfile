@@ -6,7 +6,7 @@ LABEL "com.github.actions.description"="Build & Publish Release APK on Github"
 LABEL "com.github.actions.icon"="package"
 LABEL "com.github.actions.color"="red"
 
-LABEL "repository"="https://github.com/siristechnology/action-release"
+LABEL "repository"="https://github.com/siristechnology/action-create-release"
 LABEL "maintainer"="siristechnology"
 
 RUN apt update \

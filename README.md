@@ -1,4 +1,4 @@
-# action-release
+# action-create-release
 
 ![screenshot](./release-screenshot.png)
 
@@ -24,7 +24,7 @@ jobs:
   steps:
    - uses: actions/checkout@master
    - name: Publish Release APK
-     uses: siristechnology/action-release@master
+     uses: siristechnology/action-create-release@master
      env:
       GITHUB_TOKEN: ${{ secrets.TOKEN }}
       RELEASE_FILE_PATH: android/app/build/outputs/apk/release/app-release.apk
