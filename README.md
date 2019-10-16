@@ -43,7 +43,7 @@ I am unsure as to why using the default `GITHUB_TOKEN` provided universally will
 
 You'll need to provide these environment variables to specify exactly what information is needed to build the APK.
 
-* **APP_FOLDER**: main folder to search for the apk. Most of the time, it's `app`
+* **RELEASE_FILE_PATH**: path of the file to be added to the release
 * **RELEASE_TITLE**: title for release
 
 ## Credits
