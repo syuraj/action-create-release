@@ -1,6 +1,6 @@
 # action-release
 
-<!-- ![screenshot](screenshot.png) -->
+![screenshot](./release-screenshot.png)
 
 🕷 Build and release APK from your React-Native project
 
